@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pokémon Search App Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Henny+Penny&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Pokémon Search App: An <span id="spotlight-one">All</span>-<span id="spotlight-two">In</span>-<span id="spotlight-three">One</span> Index</h1>
+    <p id="intro">Look up a Pokémon by its name or ID number! No special characters, dashes for separation. Gender symbols are -m and -f for males and females respectively.</p>
+
+    <div id="search-container">
+      <form>
+        <input id="search-input" placeholder="e.g. Pikachu" required>
+        <button type="submit" id="search-button">Search</button>
+      </form>
+    </div>
+
+    <div id="index-container">
+        <div id="identity">
+          <div id="pokemon-name"></div>
+          <div id="pokemon-id"></div>
+        </div>
+
+        <div id="stats">
+          <div>
+            <p>Weight</p>
+            <p id="weight"></p>
+          </div>
+          <div>
+            <p>Height</p>
+            <p id="height"></p>
+          </div>
+          <div>
+            <p>Hp</p>
+            <p id="hp"></p>
+          </div>
+          <div id="types"></div>
+        </div>
+      
+      <div id="appearance"></div>
+
+      <div id="combat">
+        <div>
+          <p>Attack</p>
+          <p id="attack"></p>
+        </div>
+        <div>
+          <p>Defense</p>
+          <p id="defense"></p>
+        </div>
+        <div>
+          <p>Special Attack</p>
+          <p id="special-attack"></p>
+        </div>
+        <div>
+          <p>Special Defense</p>
+          <p id="special-defense"></p>
+        </div>
+        <div>
+          <p>Speed</p>
+          <p id="speed"></p>
+        </div>
+      </div> 
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
